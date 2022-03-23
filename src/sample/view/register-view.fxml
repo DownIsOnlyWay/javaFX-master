@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.RegisterController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #f2c13e;">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="84.0" layoutY="27.0" prefHeight="59.0" prefWidth="432.0" text="Register New Dakar Team" textFill="WHITE">
+                    <font>
+                        <Font size="32.0" />
+                    </font>
+                </Label>
+                <Label layoutX="114.0" layoutY="112.0" text="User name:">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="124.0" layoutY="151.0" text="Password:">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="55.0" layoutY="187.0" text="Confirm Password:">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="155.0" layoutY="223.0" text="Email:">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="username_id" layoutX="228.0" layoutY="113.0" prefHeight="25.0" prefWidth="210.0" />
+                <PasswordField fx:id="password_id" layoutX="228.0" layoutY="152.0" prefHeight="25.0" prefWidth="210.0" />
+                <PasswordField fx:id="confPassword_id" layoutX="226.0" layoutY="188.0" prefHeight="25.0" prefWidth="210.0" />
+                <TextField fx:id="email_id" layoutX="228.0" layoutY="224.0" prefHeight="25.0" prefWidth="210.0" />
+                <Label fx:id="error_label" alignment="CENTER" layoutX="71.0" layoutY="271.0" prefHeight="17.0" prefWidth="485.0" textFill="RED" visible="false" />
+                <Button fx:id="register_btn" layoutX="250.0" layoutY="312.0" mnemonicParsing="false" onAction="#onRegisterButtonClick" prefHeight="48.0" prefWidth="167.0" style="-fx-background-color: #f4d981;" text="Register">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+    </children>
+</GridPane>
